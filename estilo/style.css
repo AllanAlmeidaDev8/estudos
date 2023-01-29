@@ -27,9 +27,9 @@ header {
     font-size: 2vw;
 }
 menu {
-    padding: 3px;
+    padding: 22px;
     background-color: #12101052;
-    margin: -84px 0px 14px -31px;
+    margin: -78px 0px 49px -37px;
     text-align: right;
     
 }
@@ -51,15 +51,18 @@ menu> a{
     padding-top: 0px;
     color: rgb(255, 251, 251);
     text-decoration: none;
+    text-shadow: 1px 1px 5px black;
     font-weight: lighter;
     text-align: left;
     font-family: 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
     
 }
 a:hover{
-    text-decoration: underline;
+    background-color: rgba(248, 175, 141, 0.308);
+    border-radius: 10px;
+    transition: 1s;
 
 }
 section{
