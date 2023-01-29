@@ -3,13 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @font-face {
-    font-family: ;
-    src: url();
+    font-family:'Billionstar';
+    src: url('../fonte/Billionstar.ttf');
+    font-family: 'RestolliaScript';
+    src: url('..//fonte/RestolliaScript_PERSONAL_USE_ONLY.otf');
+    font-family:'CaviarDreams';
+    src: url('../fonte/CaviarDreams.ttf');
 }
+
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+    --fonte2: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+    --fonte3: 'Sriracha', Verdana, Geneva, Tahoma, sans-serif;
+    --fonte4: 'Billionstar', Verdana, Geneva, Tahoma, sans-serif;
+    --fonte5: 'RestolliaScript', Verdana, Geneva, Tahoma, sans-serif;
+    --fonte6: 'CaviarDreams',Verdana, Geneva, Tahoma, sans-serif;
 }
     
 * {
@@ -48,8 +56,19 @@ header > h1{
 }
 h2{
     text-align: center ;
-    font-size: 40px;
+    font-size: 50px;
+    font-family: var(--fonte6);
 }
+.apres{
+    font-family: var(--fonte6);
+    font-size: 15px;
+    line-height: 1em;
+    padding-top: 10px;
+}
+.apres >p{
+    padding: 100px;
+}
+
 header > p{
     padding-bottom: 30px;
     
@@ -110,6 +129,7 @@ footer{
 .normal{
     background-color: rgb(252, 252, 252);
     color: rgb(7, 1, 1);
+   
 }
 .imagem{
     background-color: rgb(31, 30, 30);
