@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
+@font-face {
+    font-family: ;
+    src: url();
+}
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
@@ -42,6 +45,10 @@ header > h1{
      text-transform: small-caps;
      font-family: 'Times New Roman', Times, serif;
      
+}
+h2{
+    text-align: center ;
+    font-size: 40px;
 }
 header > p{
     padding-bottom: 30px;
@@ -84,7 +91,8 @@ section.imagem{
 
 section.imagem > p {
     display: inline-block ;
-    background-color: rgba(0, 0, 0, 0.288);
+    padding-left: 20px0;
+    background-color: rgba(0, 0, 0, 0.555);
     text-shadow: 1px 1px 0px black;
     font-size: 30px;
    
@@ -119,7 +127,15 @@ section#img001{
 }
 
 section#img002{
-    background-image: url(../imagens/);
+    background-image: url(../imagens/pousada2.jpeg);
+    background-position: right center;
+    
+    
+}
+
+
+section#img003{
+    background-image: url(../imagens/pousada3.jpeg);
     background-position: right center;
     
     
