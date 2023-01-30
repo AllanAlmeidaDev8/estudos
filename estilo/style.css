@@ -28,6 +28,8 @@ html , body {
     min-height: 100vh;
     background-color: rgb(255, 252, 252);
     font-family: var(--fonte1);
+    width: 100%;
+    height: auto;
     
 }
 
@@ -42,6 +44,7 @@ menu {
     background-color: #12101052;
     margin: -78px 0px 49px -37px;
     text-align: right;
+    display: flexbox;
     
 }
 
@@ -58,15 +61,24 @@ h2{
     text-align: center ;
     font-size: 50px;
     font-family: var(--fonte6);
+    line-height: 1em;
 }
 .apres{
     font-family: var(--fonte6);
     font-size: 15px;
     line-height: 1em;
-    padding-top: 10px;
+    width: 700px;
+    margin: auto;
 }
 .apres >p{
-    padding: 100px;
+       margin-top: 10px;
+       
+}
+.pousada{
+    padding-left: 47%;
+}
+.textocasa{
+    text-align: center;
 }
 
 header > p{
@@ -84,8 +96,9 @@ menu> a{
     padding: 10px;
     font-size: 20px;
     
+    
 }
-a:hover{
+menu>a:hover{
     background-color: rgba(248, 175, 141, 0.308);
     border-radius: 10px;
     transition: 1s;
@@ -104,13 +117,14 @@ section.imagem{
     color: white;
     box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
     background-size: cover;
-    background-attachment: fixed ;
+    background-attachment: fixed;
+    width: 100%;
 
 }
 
 section.imagem > p {
     display: inline-block ;
-    padding-left: 20px0;
+    padding-left: 20px;
     background-color: rgba(0, 0, 0, 0.555);
     text-shadow: 1px 1px 0px black;
     font-size: 30px;
@@ -118,7 +132,7 @@ section.imagem > p {
 }
 
 section > p{
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 footer{
     text-align: center;
@@ -135,12 +149,15 @@ footer{
     background-color: rgb(31, 30, 30);
     color: white;
     box-shadow: inset 9px 12px 13px rgb(0 0 0 / 47%);
+    margin: auto;
 
 }
 
 section#img001{
+    width: 100%;
     background-image: url(../imagens/pousada1.jpeg);
-    background-position: right center;
+    background-position: center;
+    margin: auto;
    
     
 
@@ -158,5 +175,21 @@ section#img003{
     background-image: url(../imagens/pousada3.jpeg);
     background-position: right center;
     
+    
+}
+#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+#redes-sociais img:hover{
+    border: 2px solid white;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.650);
+    transition: 0.3s border .2s;
+
+
     
 }
