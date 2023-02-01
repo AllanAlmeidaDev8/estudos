@@ -1,197 +1,129 @@
 @charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @font-face {
-    font-family:'Billionstar';
+    font-family:'Billionstar' ;
     src: url('../fonte/Billionstar.ttf');
-    font-family: 'RestolliaScript';
-    src: url('..//fonte/RestolliaScript_PERSONAL_USE_ONLY.otf');
-    font-family:'CaviarDreams';
+    font-family: 'CaviarDreams';
     src: url('../fonte/CaviarDreams.ttf');
-}
-
-:root{
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
-    --fonte3: 'Sriracha', Verdana, Geneva, Tahoma, sans-serif;
-    --fonte4: 'Billionstar', Verdana, Geneva, Tahoma, sans-serif;
-    --fonte5: 'RestolliaScript', Verdana, Geneva, Tahoma, sans-serif;
-    --fonte6: 'CaviarDreams',Verdana, Geneva, Tahoma, sans-serif;
-}
+    font-family: 'Bizantheum';
+    src: url('../fonte/Bizantheum.otf');
     
+}
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Billionstar', Geneva, Tahoma, sans-serif; 
+    --fonte3:'CaviarDreams', Geneva, Tahoma, sans-serif; 
+    --fonte4:'Bizantheum', Geneva, Tahoma, sans-serif; 
+}
 * {
     margin: 0px;
     padding: 0px;
 }
-html , body {
+html, body{
     min-height: 100vh;
-    background-color: rgb(255, 252, 252);
-    font-family: var(--fonte1);
-    width: 100%;
-    height: auto;
-    
-}
-
-header {
-    background-color: rgba(247, 178, 218, 0.87);
-    color: white;
-    text-align: center;
-    font-size: 2vw;
+    background-color: rgba(163, 122, 122, 0);
 }
 menu {
-    padding: 0px 50px 0px;
-    background-color: #12101052;
-    margin: -78px 0px 49px -37px;
-    text-align: right;
-    display: flexbox;
-    
-}
-
-header > h1{
-     padding-top: 10px;
-     padding-bottom: 10px;
-     text-align: left;
-     text-shadow: 2px 8px 5px black;
-     font-family: 'Times New Roman', Times, serif;
-     
-}
-h2{
-    text-align: center ;
-    font-size: 50px;
-    font-family: var(--fonte6);
-    line-height: 1em;
-}
-.check-in{
-    font-size: 20px;
-    font-family: var(--fonte6);
-    background-color: #12101052;
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
     text-align: center;
-    
-    
+    margin-top: -92px;
+    padding: 30px;
+    margin-left: -34px;
 }
-input{
-    padding: 5px;
+menu >a {
+    color: white;
+    padding: 10px;
     border-radius: 10px;
 }
-
-.apres{
-    font-family: var(--fonte6);
-    font-size: 15px;
-    line-height: 1em;
-    width: 700px;
-    margin: auto;
+p {
+    font-family: var(--fonte3);
 }
-.apres >p{
-       margin-top: 10px;
-       
-}
-.pousada{
-    padding-left: 47%;
-}
-.textocasa{
-    text-align: center;
-}
-
-header > p{
-    padding-bottom: 30px;
-    
-}
-menu> a{
-    padding-top: 0px;
-    color: rgb(255, 251, 251);
+a {
     text-decoration: none;
-    text-shadow: 1px 1px 5px black;
-    font-weight: lighter;
-    text-align: left ;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
-    font-size: 20px;
-    
-    
 }
 menu>a:hover{
-    background-color: rgba(248, 175, 141, 0.308);
+    background-color: #fc94ea8f;
+    color: black;
     border-radius: 10px;
-    transition: 1s;
+    transition: 0.5s;
 
 }
 section{
-    
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte3);
-    font-size:  2.3vw;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
 }
 section.imagem{
-    
-    background-color: rgb(44, 43, 43);
-    color: white;
-    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
+    background-color: rgb(51, 51, 51);
+    background-position: right center;
     background-size: cover;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.534);
     background-attachment: fixed;
     
-
 }
 
-section.imagem > p {
-    display: inline-block ;
-    padding: 20px 20px;
-    background-color: rgba(0, 0, 0, 0.555);
-    text-shadow: 1px 1px 0px black;
-    font-size: 30px;
-    line-height: 2em;
-    font-family: var(--fonte6);
-   
+section.imagem >p {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    text-shadow: 1px 1px 5px rgb(0 0 0);
+    font-size: 25px;
+    margin-top: 114px;
+    margin-bottom: 12rem;
+    margin-right: 21px;
+    padding: 0px;
+}
+div{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-left: -30px;
 }
 
-section > p{
-    padding-bottom: 1em;
+input{
+    padding: 5px;
+    border-radius: 10px;
+    
 }
-footer{
+h3 {
     text-align: center;
-    color: white;
-    padding: 10px;
-    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    font-family: var(--fonte4);
+    font-size: 50px;
 }
-.normal{
-    background-color: rgb(252, 252, 252);
-    color: rgb(7, 1, 1);
-   
-}
-.imagem{
-    background-color: rgb(31, 30, 30);
-    color: white;
-    box-shadow: inset 9px 12px 13px rgb(0 0 0 / 47%);
+section.normal >p {
+    width: 360px;
+    height: 30px;
     margin: auto;
-
+    padding-bottom: 40px;
 }
 
 section#img001{
-    width: 100%;
-    background-image: url(../imagens/pousada1.png);
-    background-position: center;
-    margin: auto;
-   
+    background-image: url(../imagens/pousada1.jpeg);
     
 
 }
-
 section#img002{
-    width: 100%;
-    background-image: url(../imagens/pousada2.jpeg);
-    background-position: center;
-    margin: auto;
-}
-
-
-section#img003{
-    width: 1%;
     background-image: url(../imagens/pousada3.jpeg);
-    background-position: center;
-    margin: auto;
+    background-position: left center;
+    
+}
+section#img003{
+    background-image: url(../imagens/pousada2.jpeg);
+    background-position: left center;
+    
+}
+section.normal {
+    background-image: url(../imagens/icons8-hostel-100.png);
+    background-repeat: no-repeat;
+    background-position: center 200px;
+    
     
 }
 #redes-sociais img{
@@ -207,6 +139,11 @@ section#img003{
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.650);
     transition: 0.3s border .2s;
 
+}
 
-    
+footer {
+text-align: center;
+color: white;
+padding: 10px;
+background-color: black;
 }
